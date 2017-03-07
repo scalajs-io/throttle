@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSImport, ScalaJSDefined}
   * @author lawrence.daniels@gmail.com
   */
 @js.native
-@JSImport("Throttle", name = JSImport.Namespace)
+@JSImport("throttle", name = JSImport.Namespace)
 class Throttle(options: ThrottleOptions) extends Readable with Writable {
 
   def this(rate: Double) = this(null)
