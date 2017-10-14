@@ -3,7 +3,7 @@ package io.scalajs.npm.throttle
 import io.scalajs.nodejs.stream.{Readable, Writable}
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.{JSImport, ScalaJSDefined}
+import scala.scalajs.js.annotation.JSImport
 
 /**
   * throttle - Node.js Transform stream that passes data through at n bytes per second
@@ -23,7 +23,7 @@ class Throttle(options: ThrottleOptions) extends Readable with Writable {
   * @param chunkSize     the chunk size in bytes
   * @param highWaterMark the high water mark
   */
-@ScalaJSDefined
+
 class ThrottleOptions(val bps: js.UndefOr[Double] = js.undefined,
                       val chunkSize: js.UndefOr[Double] = js.undefined,
                       val highWaterMark: js.UndefOr[Double] = js.undefined) extends js.Object
